@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 420px;
+    height: 85vh;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f9fafb;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.user {
+    justify-content: flex-end;
+}
+
+.user .bubble {
+    background: #0078ff;
+    color: white;
+    border-bottom-right-radius: 0;
+}
+
+.bot .bubble {
+    background: #e9ecf3;
+    color: #333;
+    border-bottom-left-radius: 0;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-size: cover;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.file-label {
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #0078ff;
+    transition: 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.file-label:hover {
+    color: #005bb5;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+#send-btn {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    margin-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#send-btn:hover {
+    background: #005bb5;
+}
